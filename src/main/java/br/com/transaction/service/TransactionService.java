@@ -5,13 +5,10 @@ import br.com.transaction.exception.ResourceNotFoundException;
 import br.com.transaction.exception.TransactionException;
 import br.com.transaction.mapper.TransactionMapper;
 import br.com.transaction.model.*;
-
 import br.com.transaction.repository.TransactionRepository;
 import br.com.transaction.util.UtilValidator;
 import org.mapstruct.factory.Mappers;
 import org.springframework.beans.factory.annotation.Autowired;
-
-import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 
 import java.math.RoundingMode;
