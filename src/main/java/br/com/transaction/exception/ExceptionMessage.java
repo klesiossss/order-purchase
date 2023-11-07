@@ -1,7 +1,6 @@
 package br.com.transaction.exception;
 
 import org.springframework.http.HttpStatus;
-
 import java.util.List;
 
 public class ExceptionMessage {

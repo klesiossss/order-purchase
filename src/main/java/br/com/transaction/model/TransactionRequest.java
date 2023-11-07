@@ -14,16 +14,13 @@ import java.time.LocalDate;
 @Builder
 @NoArgsConstructor
 public class TransactionRequest {
-
  public TransactionRequest(LocalDate date,BigDecimal amount, String description ){
   this.date = date;
   this.amount = amount;
   this.description = description;
  }
-
     @JsonFormat(pattern = "yyyy-MM-dd", shape = JsonFormat.Shape.STRING)
     private LocalDate date;
-
     @Positive( message = "3# amount must be positive")
     private BigDecimal amount;
     @Size(min=1, max = 50, message = "4# the description should be maximum 50 caracters")

@@ -18,7 +18,6 @@ import org.springframework.test.web.servlet.MockMvc;
 import java.math.BigDecimal;
 import java.time.LocalDate;
 
-import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.ArgumentMatchers.*;
 import static org.mockito.Mockito.when;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;
@@ -84,7 +83,6 @@ class ControllerTest {
                 .andExpect(header().string("Location", "http://localhost/v1/createTransaction/1"))
                 .andExpect(status().isCreated())
                 .andReturn();
-
     }
 
     @Test

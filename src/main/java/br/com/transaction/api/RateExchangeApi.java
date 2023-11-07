@@ -10,7 +10,6 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Component;
 import org.springframework.web.client.RestTemplate;
 
-
 import java.time.LocalDate;
 import java.util.Arrays;
 import java.util.List;
@@ -19,8 +18,6 @@ import java.util.List;
 @Component
 public class RateExchangeApi {
 
-/*    @Autowired
-    private RestTemplate restTemplate = new RestTemplate();*/
 @Autowired
 @Qualifier("rateExchangeRestTemplate")
 private RestTemplate restTemplate;

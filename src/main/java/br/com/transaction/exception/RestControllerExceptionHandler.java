@@ -20,7 +20,6 @@ import java.util.stream.Collectors;
 @ControllerAdvice
 @Slf4j
 public class RestControllerExceptionHandler extends ResponseEntityExceptionHandler {
-
     @ExceptionHandler(ConstraintViolationException.class)
     public ResponseEntity<List<StandardError>> handleConstrainViolationException(ConstraintViolationException exception){
 
@@ -49,7 +48,6 @@ public class RestControllerExceptionHandler extends ResponseEntityExceptionHandl
         ExceptionMessage exception = new ExceptionMessage(ex.getMessage(), HttpStatus.BAD_REQUEST, null);
         return handleExceptionInternal(ex, exception, new HttpHeaders(), exception.getStatusCode(), request);
     }
-
 
     private ExceptionMessage getExceptionMessageObject(MethodArgumentNotValidException ex) {
         List errors = new ArrayList<String>();

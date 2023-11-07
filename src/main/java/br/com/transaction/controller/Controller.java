@@ -24,7 +24,6 @@ public class Controller {
         var transaction1 = service.create(transaction);
         var location = ServletUriComponentsBuilder.fromCurrentRequestUri().path("/{id}").buildAndExpand(transaction1.getId()).toUri();
         return ResponseEntity.created(location).body(transaction1);
-
     }
 
     @GetMapping("{transactionIdentifier}/{countryCurrency}")

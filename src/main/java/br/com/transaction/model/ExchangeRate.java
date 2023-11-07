@@ -5,7 +5,6 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-
 import java.math.BigDecimal;
 import java.time.LocalDate;
 
@@ -14,7 +13,6 @@ import java.time.LocalDate;
 @NoArgsConstructor
 @Builder
 public class ExchangeRate {
-
 
     @JsonProperty("record_date")
     private LocalDate recordDate;
